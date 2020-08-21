@@ -83,33 +83,35 @@ console.log(result3, "Dog feeder");
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
-// const rock = 1;
-// const paper = 2;
-// const scissors = 3;
+const rock = 1;
+const paper = 2;
+const scissors = 3;
 
-// const game = (playerChoice) => {
-//   let compChoice = Math.floor(Math.random() * 3) + 1;
+const game = (playerChoice) => {
+  let compChoice = Math.floor(Math.random() * 3) + 1;
 
-//   if (playerChoice === compChoice) {
-//     console.log("You and Computer chose the same: \nIts a tie");
-//   } else if (playerChoice === 1 && compChoice === 2) {
-//     console.log("You chose ROCK, and Computer chose PAPER:\n Computer Wins");
-//   } else if (playerChoice === 1 && compChoice === 3) {
-//     console.log("You chose ROCK, and Computer chose SCISSORS:\n You Win");
-//   } else if (playerChoice === 2 && compChoice === 1) {
-//     console.log("You chose PAPER, and Computer chose ROCK:\n You Win");
-//   } else if (playerChoice === 2 && compChoice === 3) {
-//     console.log(
-//       "You chose PAPER, and Computer chose SCISSORS:\n Computer Wins"
-//     );
-//   } else if (playerChoice === 3 && compChoice === 1) {
-//     console.log("You chose SCISSORS, and Computer chose ROCK:\n Computer Wins");
-//   } else if (playerChoice === 3 && compChoice === 2) {
-//     console.log("You chose SCISSORS, and Computer chose PAPER:\n You Win");
-//   }
-// };
+  if (playerChoice === compChoice) {
+    console.log("You and Computer chose the same: \nIts a tie");
+  } else if (playerChoice === 1 && compChoice === 2) {
+    console.log("You chose ROCK, and Computer chose PAPER:\n Computer Wins");
+  } else if (playerChoice === 1 && compChoice === 3) {
+    console.log("You chose ROCK, and Computer chose SCISSORS:\n You Win");
+  } else if (playerChoice === 2 && compChoice === 1) {
+    console.log("You chose PAPER, and Computer chose ROCK:\n You Win");
+  } else if (playerChoice === 2 && compChoice === 3) {
+    console.log(
+      "You chose PAPER, and Computer chose SCISSORS:\n Computer Wins"
+    );
+  } else if (playerChoice === 3 && compChoice === 1) {
+    console.log("You chose SCISSORS, and Computer chose ROCK:\n Computer Wins");
+  } else if (playerChoice === 3 && compChoice === 2) {
+    console.log("You chose SCISSORS, and Computer chose PAPER:\n You Win");
+  }
+};
 
-// game(rock);
+game(rock);
+game(paper);
+game(scissors);
 
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice
@@ -195,38 +197,35 @@ console.log(resultVowel, "Result Vowel");
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-const rock = 1;
-const paper = 2;
-const scissors = 3;
 
-const gameRPS = () => {
-  let playerChoice = prompt(
-    "PLease choose 1 for rock, 2 for paper or 3 for scissors"
-  );
-  let player = parseInt(playerChoice);
-  console.log(player, "Players choice");
+// const gameRPS = () => {
+//   let playerChoice = prompt(
+//     "PLease choose 1 for rock, 2 for paper or 3 for scissors"
+//   );
+//   let player = parseInt(playerChoice);
+//   console.log(player, "Players choice");
 
-  let compChoice = Math.floor(Math.random() * 3) + 1;
-  console.log(compChoice, "Computers choice");
+//   let compChoice = Math.floor(Math.random() * 3) + 1;
+//   console.log(compChoice, "Computers choice");
 
-  if (player === compChoice) {
-    console.log("You and Computer chose the same: \nIts a tie");
-  } else if (player === 1 && compChoice === 2) {
-    console.log("You chose ROCK, and Computer chose PAPER:\n Computer Wins");
-  } else if (player === 1 && compChoice === 3) {
-    console.log("You chose ROCK, and Computer chose SCISSORS:\n You Win");
-  } else if (player === 2 && compChoice === 1) {
-    console.log("You chose PAPER, and Computer chose ROCK:\n You Win");
-  } else if (player === 2 && compChoice === 3) {
-    console.log(
-      "You chose PAPER, and Computer chose SCISSORS:\n Computer Wins"
-    );
-  } else if (player === 3 && compChoice === 1) {
-    console.log("You chose SCISSORS, and Computer chose ROCK:\n Computer Wins");
-  } else if (player === 3 && compChoice === 2) {
-    console.log("You chose SCISSORS, and Computer chose PAPER:\n You Win");
-  } else {
-    console.log("something went wrong");
-  }
-};
-gameRPS();
+//   if (player === compChoice) {
+//     console.log("You and Computer chose the same: \nIts a tie");
+//   } else if (player === 1 && compChoice === 2) {
+//     console.log("You chose ROCK, and Computer chose PAPER:\n Computer Wins");
+//   } else if (player === 1 && compChoice === 3) {
+//     console.log("You chose ROCK, and Computer chose SCISSORS:\n You Win");
+//   } else if (player === 2 && compChoice === 1) {
+//     console.log("You chose PAPER, and Computer chose ROCK:\n You Win");
+//   } else if (player === 2 && compChoice === 3) {
+//     console.log(
+//       "You chose PAPER, and Computer chose SCISSORS:\n Computer Wins"
+//     );
+//   } else if (player === 3 && compChoice === 1) {
+//     console.log("You chose SCISSORS, and Computer chose ROCK:\n Computer Wins");
+//   } else if (player === 3 && compChoice === 2) {
+//     console.log("You chose SCISSORS, and Computer chose PAPER:\n You Win");
+//   } else {
+//     console.log("something went wrong");
+//   }
+// };
+// gameRPS();
